@@ -1,3 +1,13 @@
 body {
     font-family: 'Mukta', sans-serif;
 }
+
+@font-face {
+    font-family: RealGipsy;
+    src: url("real-gipsy/Real\ Gipsy\ -\ Personal\ Use.otf") format("opentype")
+    
+}
+h1 {
+    font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
