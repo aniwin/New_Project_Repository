@@ -1,3 +1,18 @@
 body {
     font-family: 'Mukta', sans-serif;
+
+}
+
+
+.imagewrapper {
+
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.imagewrapper img {
+    margin: 0 0 0 -75px;
 }
