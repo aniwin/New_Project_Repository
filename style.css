@@ -35,3 +35,31 @@ h1 {
     align-self: center;
     margin: 5px;
 }
+
+.listSubheading {
+    margin-left: -42px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 500px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h4 {
+    text-decoration: underline;
+}
