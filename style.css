@@ -11,3 +11,15 @@ h1 {
     font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
     font-size: 75px;
 }
+
+.ethiopia-header {
+    display: flex;
+}
+
+.ethiopia-flag {
+
+
+ height: 100%;
+align-self: center;
+margin: 5px;
+}
