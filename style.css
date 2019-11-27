@@ -1,7 +1,7 @@
 body {
     font-family: 'Mukta', sans-serif;
-    background-color: #0b244d;
-    color: #c3d6c8;
+    background-color: #96b8f2;
+    color: white;
 
 }
 
@@ -28,14 +28,20 @@ body {
 h1 {
     font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
     font-size: 75px;
+    color: white;
 }
 
 .ethiopia-header {
     display: flex;
+    color: white;
 }
 
 .ethiopia-flag {
     align-self: center;
     margin: 5px;
+}
+
+ol{
+    color: white;
 }
 
