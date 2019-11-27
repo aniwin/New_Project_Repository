@@ -16,3 +16,22 @@ body {
 .imagewrapper img {
     margin: 0 0 0 -75px;
 }
+
+@font-face {
+    font-family: RealGipsy;
+    src: url("real-gipsy/Real\ Gipsy\ -\ Personal\ Use.otf") format("opentype")
+    
+}
+h1 {
+    font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+
+.ethiopia-header {
+    display: flex;
+}
+
+.ethiopia-flag {
+    align-self: center;
+    margin: 5px;
+}
