@@ -14,20 +14,116 @@ body {
     border-radius: 50%;
 }
 
-.topnav a {
-    float: left;
-    color: white;
-    text-align: right;
-    align-self: right;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .topnav a:hover {
-    background-color: #96b8f2;
-    color: black;
-  }
+#stickynav {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; 
+}
+
+#stickynav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #96b8f2;
+}
+
+#stickynav li {
+  float: left;
+}
+
+#stickynav li a, .recipes-dropbtn {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#stickynav li a:hover, .recipes-dropdown:hover .recipes-dropbtn {
+  background-color: pink;
+}
+
+#stickynav li.recipes-dropdown {
+  display: inline-block;
+}
+
+.recipes-content {
+  display: none;
+  position: absolute;
+  background-color:pink;
+  color: black 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.recipes-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.recipes-content a:hover {background-color: #96b8f2;}
+
+#stickynav .recipes-dropdown:hover .recipes-content {
+  display: block;
+}
+
+#stickynav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #96b8f2;
+}
+
+#stickynav li {
+  float: left;
+}
+
+#stickynav li a, .countries-dropbtn {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#stickynav li a:hover, .countries-dropdown:hover .countries-dropbtn {
+  background-color: pink;
+}
+
+#stickynav li.countries-dropdown {
+  display: inline-block;
+}
+
+.countries-content {
+  display: none;
+  position: absolute;
+  background-color:pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.countries-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.countries-content a:hover {background-color: #96b8f2;}
+
+#stickynav .countries-dropdown:hover .countries-content {
+  display: block;
+}
 
 .imagewrapper img {
     margin: 0 0 0 -75px;
@@ -44,8 +140,12 @@ h1 {
     color: white;
 }
 
-.ethiopia-header {
-    display: flex;
+.ethiopia-header h2 {
+  font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+   display: inline-flex; 
+    
+    
     color: white;
 }
 
@@ -58,21 +158,7 @@ h1 {
     margin-left: -42px;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
-    width: 500px;
-}
+
 
 .underline {
     text-decoration: underline;
@@ -87,4 +173,43 @@ ol{
 
 h2 {
     font-size: 40px;
+}
+
+* {box-sizing:border-box}
+
+.container{
+  max-width: 1400px;
+  
+  display: flex;
+  background-color:#96b8f2;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+
+
+  text-align: center;
+  background-color:#96b8f2 ;
+  
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 500px;
 }
