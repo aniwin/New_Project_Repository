@@ -149,6 +149,15 @@ h1 {
     color: white;
 }
 
+.india-header h2 {
+  font-family: 'RealGipsy', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+   display: inline-flex; 
+
+
+   color: white; 
+}
+
 .ethiopia-flag {
     align-self: center;
     margin: 5px;
