@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='style.css'>
+        <script src="./script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <title>Recipes of the World</title>
+    </head>
+    <body>
+            <div class="wrapper">
+            <div class="content">
+                
+                    <div id="stickynav">
+                        <ul>
+                            <li><a href="homepage.html">About</a></li>
+                            <li class="countries-dropdown"><a href="javascript:void(0)" class="countries-dropbtn">Countries</a>
+                            <div class="countries-content">
+                              <a href="Ethiopia.html">Ethiopia</a>
+                              <a href="Israel.html">Israel</a>
+                              <a href="#Spain">Spain</a>
+                              <a href="India.html">India</a>
+                    
+                    </div>
+                          </li>
+                            <li class="recipes-dropdown">
+                              <a href="javascript:void(0)" class="recipes-dropbtn">Recipes</a>
+                              <div class="recipes-content">
+                                <a href="Ethiopia.html">Injera</a>
+                                <a href="Israel.html">Baba Ganoush</a>
+                               
+                                <a href="India.html">India</a>
+                              </div>
+                              <li><a href="#news">Contact</a></li>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                
+                
+                
+                <h1>Contact Us </h1>
+          
+                
+                </div>
+        <div class="container-form">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">USA</option>
+                <option value="canada">UK</option>
+                <option value="usa">India</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Talk to us!Let us know what your favourite recipe is!" style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> 
+          </div>
+        
+    </body>
+    <script>
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("stickynav").style.top = "0";
+              } else {
+                document.getElementById("stickynav").style.top = "-50px";
+              }
+            }
+            </script>
+</html>
